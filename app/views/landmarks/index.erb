@@ -1,0 +1,14 @@
+All your landmarks are belong to me
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Year Completed</th>
+  </tr>
+  <tr>
+    <% Landmark.all.each do |landmark| %>
+      <td><%= landmark.name %></td>
+      <td><%= landmark.year_completed %></td>
+    <% end %>
+  </tr>
+<table>
